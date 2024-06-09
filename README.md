@@ -1,5 +1,5 @@
 # AGENCY.gihub.io
 
-issues:
+Issues:
 
 Not responsive
