@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: main;
+    line-height: 1.7;
+}
+
+@font-face {
+    font-family: main;
+    src: url(../fonts/Open_Sans/OpenSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: boldHeader;
+    src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 5%;
+    gap: 40px;
+    padding: 4%;
+}
+
+.sectionA {
+    background-color: #b49459;
+    opacity: .9;
+    color: #ffffff;
+    padding: 20%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.sectionA h2 {
+    margin-bottom: 7%;
+    font-weight: 100;
+}
+
+.sectionA p {
+    line-height: 1.9;
+    letter-spacing: 1px;
+}
+
+.sectionB img,
+.sectionC img,
+.sectionE img,
+.sectionF img {
+    width: 100%;
+    height: 60vh;
+}
+
+.sectionD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionD h1 {
+    text-transform: uppercase;
+    color: #b49459;
+    font-size: 400%;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: boldHeader;
+}
+
+.sectionG {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 7%;
+    font-size: 120%;
+    grid-column: 2/4;
+}
+
+.sectionG p {
+    margin-bottom: 5%;
+    line-height: 1.9;
+}
+
+.sectionG a {
+    color: #333333;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1% 4%;
+    letter-spacing: 1px;
+    border: 2px solid #333333;
+    font-size: 90%;
+    transition: .5s;
+}
+
+.sectionG a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.background{
+    background-image: url(../img/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 80%;
+}
+
+.opacity {
+    background-color: #333333ba;
+}
+
+.background,
+.opacity {
+    width: 100%;
+    height: 150vh;
+}
+
+footer {
+    background-color: #333333;
+    color: #d0a676;
+    padding: 2%;
+    text-align: center;
+    text-transform: capitalize;
+}
